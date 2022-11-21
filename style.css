@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    background-image: url(./images/map.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    padding-top: 35px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    margin-bottom: 60px;
+}
+header a img {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(22, 22, 22, 0);
+}
+header a {
+    display: block;
+    margin-left: 70px;
+    text-decoration: none;
+    color: white;
+    font: italic medium 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 120px;
+    border-style:solid;
+    border-width: 1.5px;
+    padding: 3px;
+    border-color: white;
+}
+header a:nth-child(1) {
+    width: fit-content;
+    border: none;
+    font-weight: bold;
+}
+
+@media (max-width: 800px) {
+    ul {
+        flex-direction: column;
+    }
+}
+
+main {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+p-1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 460%;
+    background-color: rgba(185, 111, 0, 0.703);
+    color: white;
+}
+p-1 a {
+    font-family:fantasy;
+    color: rgb(46, 29, 18);
+    text-shadow:  5px 5px 5px rgb(255, 162, 0);
+    text-decoration: none;
+    animation: elaine 10s infinite;
+}
+p-2 {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 25px;
+    color: white;
+    text-shadow:  5px 5px 5px rgb(36, 11, 1);
+}
+main ul {
+    display: inline-flex;
+    list-style-type: none;
+}
+main ul a {
+    text-align: center;
+    text-decoration: none;
+    border-radius: 90%;
+    display: block;
+    box-shadow: 10px 5px 5px rgba(46, 35, 30, 0.842);
+    margin: 50px;
+    padding: 15px;
+    padding-bottom: 20px;
+    width: auto;
+    background-color: rgba(185, 111, 0, 0.676);
+    color:white;
+    font-size: 220%;
+}
+main ul a:hover {
+    margin-top: 15px;
+    padding-bottom: 20px;
+    font-size: 350%;
+    color: rgb(202, 27, 0);
+    font-style: bold;
+    font-family: fantasy;
+    text-shadow:  5px 5px 5px rgb(255, 162, 0);
+    transition: all 1s linear;
+}
+
+footer {
+    padding: 10px;
+    text-align:center;
+    display: block;
+    position: fixed;
+    width: 100%;
+    bottom: 1%;
+    background-color: rgba(185, 111, 0, 0.676);
+    text-shadow:  8px 8px 8px rgb(0, 0, 0);
+}
+footer li {
+    color: white;
+    font-style: bold;
+}
+
+@keyframes elaine {
+    0% {color: rgb(141, 82, 0); letter-spacing: 0px;}
+    25% {color: rgb(202, 27, 0); letter-spacing: 6px;}
+    50% {color: rgb(121, 40, 0); letter-spacing: 12px;}
+    75% {color:rgb(255, 85, 23); letter-spacing: 6px;}
+    100% {color: rgb(141, 82, 0); letter-spacing: 0px;}
+}
