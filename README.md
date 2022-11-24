@@ -1,6 +1,9 @@
 # web_CW
 Course Work for Web Technology
-url: https://00017286.github.io/web_CW/
+
+Url: https://00017286.github.io/web_CW/
+
+Github repository: https://github.com/00017286/web_CW.git
 
 My site is made for a local Uzbek company "Elaine travel". It has 6 pages (homepage, 4 destinations pages and contact page).
 
