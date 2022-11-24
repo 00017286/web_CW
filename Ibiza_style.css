@@ -8,98 +8,96 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: auto;
     background-image: url(./images/ibiza.jpg);
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
-    height:fit-content;
-    width: fit-content;
+    width: 100%;
 }
 
 header {
-    padding: 10px;
-    padding-top: 35px;
-    padding-right: 20px;
+    margin: 2%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 40px;
-    margin-bottom: 60px;
-}
-header a img {
-    position: absolute;
-    top: 10px;
-    left: 15px;
-    width: 50px;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px 0 rgba(22, 22, 22, 0);
+    margin-bottom: 3%;
 }
 header a {
-    display: block;
-    margin-left: 70px;
     text-decoration: none;
     color: white;
-    font: italic medium 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 120px;
-    border-style:solid;
-    border-width: 1.5px;
-    padding: 3px;
-    border-color: white;
+    width: 10vw;
+    font-size: 1.5vw;
+    border: 1.5px solid white;
 }
 header a:nth-child(1) {
-    width: fit-content;
     border: none;
-    font-weight: bold;
+}
+header a img {
+    width: 100%;
+    border-radius: 5%;
 }
 header a:nth-child(4) {
     color: aqua;
     border-color: aqua;
 }
 
+footer {
+    padding: 10px;
+    margin-bottom: 1%;
+    text-align:center;
+    width: 100%;
+    background-color: rgba(255, 244, 95, 0.53);
+    text-shadow:  8px 8px 8px rgb(0, 0, 0);
+}
+footer li {
+    color: rgb(59, 42, 32);
+    font-weight: bold;
+    font: bold 13px Georgia, 'Times New Roman', Times, serif;
+}
+
+
 main article {
     width: 95%;
     display: flex;
     margin: auto;
-    margin-bottom: 40px;
     border: 5px dashed rgb(255, 244, 95);
-    padding: 10px;
+    padding: 1%;
+    font-size: 100%;
 }
 main h1 {
-    font: bold 40px Georgia, 'Times New Roman', Times, serif;
+    font: bold 250% Georgia, 'Times New Roman', Times, serif;
     color: white;
 }
 main h2 {
-    font: bold 40px Georgia, 'Times New Roman', Times, serif;
+    font: bold 250% Georgia, 'Times New Roman', Times, serif;
     color: rgb(255, 244, 95);
 }
 table {
-    justify-content: center;
-    text-align:left;
     width: 95%;
-    flex-direction: row;
-    display: flex;
-    margin: 30px;
-    margin-bottom: 20px;
-    padding: 30px;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+table tr th {
+    font-size: 200%;
 }
 table th {
     text-align: center;
-    font: bold 40px Georgia, 'Times New Roman', Times, serif;
+    font: bold 300% Georgia, 'Times New Roman', Times, serif;
     color: white;
 }
 table td span {
     text-transform:uppercase;
     color: rgb(63, 47, 23);
     text-decoration: underline;
-    line-height: 40px;
 }
 table td {
     background-color: rgba(255, 244, 95, 0.53);
-    font: bold 16px Georgia, 'Times New Roman', Times, serif;
+    font: bold 100% Georgia, 'Times New Roman', Times, serif;
     color: rgb(59, 42, 32);
-    line-height: 25px;
-    padding: 20px;
+    line-height: 150%;
+    padding: 3%;
     border: 5px dashed rgb(255, 244, 95);
     vertical-align: top;
     text-align: justify;
@@ -107,31 +105,27 @@ table td {
 table td a {
     display: block;
     width: fit-content;
-    margin: 45px;
-    font: bold 20px Georgia, 'Times New Roman', Times, serif;
+    margin: 10%;
+    font: bold 100% Georgia, 'Times New Roman', Times, serif;
     text-decoration: none;
     text-align: center;
-    padding: 20px;
+    padding: 10%;
     color: rgb(63, 47, 23);
     border: 5px dashed rgb(63, 47, 23);
     box-shadow: 8px 8px 8px rgb(47, 28, 11);
 }
 table td a:hover {
     text-decoration: underline;
-    font-size: 22px;
+    transform: scale(1.3);
 }
 
-footer {
-    padding: 10px;
-    text-align: center;
-    display: block;
-    position: relative;
-    width: 100%;
-    margin-bottom: 10px;
-    background-color: rgba(255, 244, 95, 0.53);
-}
-footer li {
-    list-style-type: none;
-    color: rgb(59, 42, 32);
-    font: bold 13px Georgia, 'Times New Roman', Times, serif;
+@media (max-width: 600px) {
+    table tr {
+        display: flex;
+        flex-direction: column;
+    }
+    table {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    }
 }

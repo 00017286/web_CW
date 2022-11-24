@@ -8,64 +8,61 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-image: url(./images/bali.jpg);
-    background-size: cover;
     background-repeat: no-repeat;
-    background-position: right;
-    height: fit-content;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
 }
 
 header {
-    text-align: center;
-    padding: 10px;
-    padding-top: 35px;
-    padding-right: 20px;
+    margin: 2%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 40px;
-    margin-bottom: 60px;
-}
-header a img {
-    position: absolute;
-    top: 10px;
-    left: 15px;
-    width: 50px;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px 0 rgba(22, 22, 22, 0);
+    margin-bottom: 3%;
 }
 header a {
-    display: block;
-    margin-left: 70px;
     text-decoration: none;
     color: white;
-    font: italic medium 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 120px;
-    border-style:solid;
-    border-width: 1.5px;
-    padding: 3px;
-    border-color: white;
+    width: 10vw;
+    font-size: 1.5vw;
+    border: 1.5px solid white;
 }
 header a:nth-child(1) {
-    width: fit-content;
     border: none;
-    font-weight: bold;
 }
-header h3 {
-    position: absolute;
-    margin-top: 120px;
-    left: 90px;
-    color: white;
-    text-shadow:  3px 3px 3px rgb(74, 130, 0);
-    font-size: 30px;
-}
-header h3 span {
-    color: rgb(71, 39, 17);
+header a img {
+    width: 100%;
+    border-radius: 5%;
 }
 header a:nth-child(3) {
     color: aqua;
     border-color: aqua;
+}
+
+footer {
+    padding: 10px;
+    margin-bottom: 1%;
+    text-align:center;
+    width: 100%;
+    background-color: rgba(185, 111, 0, 0.676);
+    text-shadow:  8px 8px 8px rgb(0, 0, 0);
+}
+footer li {
+    color: white;
+    font-weight: bold;
+}
+
+
+h3 {
+    writing-mode: vertical-lr;
+    margin-left: 1%;
+    letter-spacing: 10px;
+    color: white;
+    text-shadow:  3px 3px 3px rgb(74, 130, 0);
+    font-size: 200%;
 }
 
 main {
@@ -74,8 +71,10 @@ main {
     width: 82%;
     color: white;
     text-shadow:  3px 3px 3px rgb(74, 130, 0);
+    margin-bottom: 3%;
 }
 main article {
+    margin: auto;
     text-align: justify;
     display: block;
     width: 95%;
@@ -83,9 +82,8 @@ main article {
     justify-content: space-between;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 20px;
-    margin: 20px;
-    margin-top: 40px;
+    padding: 5%;
+    margin-top: 5%;
     background-color: rgba(0, 255, 38, 0.584);
     border: 3px dotted rgb(74, 130, 0);
 }
@@ -104,7 +102,7 @@ aside {
     text-shadow:  3px 3px 3px rgb(74, 130, 0);
     position: fixed;
     top: 13%;
-    right: 1.5%;
+    right: 2%;
     padding: 10px;
     background-color: rgba(0, 255, 38, 0.584);
     border: 3px  dotted rgb(74, 130, 0);
@@ -120,7 +118,6 @@ aside a {
     padding-top: 10px;
     padding-bottom: 10px;
     display: block;
-    flex-direction: column;
     text-decoration: none;
     color: white;
     font-size: 20px;
@@ -150,5 +147,41 @@ footer {
 footer li {
     list-style-type: none;
     color: white;
-    font-style: bold;
+    font-weight: bold;
+}
+
+@media (max-width: 800px) {
+    h3 {
+        writing-mode: horizontal-tb;
+    }
+    main {
+        width: 100%;
+        flex-direction: column;
+    }
+    aside {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 2%;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+    aside h2 {
+        padding-bottom: 0;
+    }
+    aside a {
+        border: none;
+        padding: 0;
+    }
+    article {
+        width: 100%;
+    }
+    footer {
+        width: 100%;
+        margin-left: 0;
+    }
 }

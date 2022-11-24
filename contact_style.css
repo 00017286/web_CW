@@ -7,148 +7,147 @@
 body {
     display: flex;
     flex-direction: column;
+    text-align: center;
     background-image: url(./images/contact.jpg);
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
-    height: fit-content;
     width: 100%;
+    height: fit-content;
 }
 
 header {
-    text-align: center;
-    padding: 10px;
-    padding-top: 35px;
-    padding-right: 20px;
+    margin: 2%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 40px;
-    margin-bottom: 30px;
-}
-header a img {
-    position: absolute;
-    top: 10px;
-    left: 15px;
-    width: 50px;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px 0 rgba(22, 22, 22, 0);
 }
 header a {
-    display: block;
-    margin-left: 70px;
     text-decoration: none;
     color: white;
-    font: italic medium 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 120px;
-    border-style:solid;
-    border-width: 1.5px;
-    padding: 3px;
-    border-color: white;
+    width: 10vw;
+    font-size: 1.5vw;
+    border: 1.5px solid white;
 }
 header a:nth-child(1) {
-    width: fit-content;
     border: none;
-    font-weight: bold;
+}
+header a img {
+    width: 100%;
+    border-radius: 5%;
 }
 header a:last-child {
     color: aqua;
     border-color: aqua;
 }
 
+footer {
+    padding: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(45, 144, 237, 0.6);
+    text-shadow:  8px 8px 8px rgb(0, 0, 0);
+}
+footer li {
+    color: white;
+    text-shadow: 8px 8px 8px rgb(0, 0, 0);
+    font-weight: bold;
+}
+
 main {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     margin-bottom: 10%;
 }
-main ul {
+main iframe {
+    border-radius: 30px;
+    width: 100%;
+}
+
+#picture {
+    margin: 5%;
+}
+
+form {
+    text-align: left;
     color: rgb(80, 0, 56);
     font: bold 15px Arial, Helvetica, sans-serif;
-    padding: 20px;
-    margin-top: 20px;
-    margin-left: 5%;
-    width: fit-content;
+    padding: 2%;
+    width: 100%;
+    margin-top: 0%;
     border: 2px solid rgb(50, 23, 42);
     box-shadow: 8px 8px 8px rgb(47, 28, 11);
     background-color: rgba(45, 144, 237, 0.6);
-    border-radius: 10px;
-    animation: form 8s;
+    border-radius: 30px;
+    animation: form 5s;
 }
-main li {
-    margin-top: 10px;
+form label {
+    margin-top: 3%;
     color: rgb(80, 0, 56);
     list-style-type: none;
 }
 
 input[type=text] {
     box-sizing: border-box;
-    width: 150px;
+    width: 50%;
     background-color: rgba(255, 194, 237, 0.493);
     border: 2px solid rgb(80, 0, 56);
-    border-radius: 15px;
+    border-radius: 5px;
     padding: 3px;
     padding-left: 10px;
-    margin-top: 13px;
+    margin-top: 3%;
+    margin-bottom: 3%;
     transition: width 0.5s ease-in-out;
 }
 input[type=text]:focus {
     border: 2px solid;
     width: 100%;
 }
-main li .select-country {
-    box-sizing: border-box;
-    width: fit-content;
-    background-color: rgba(255, 194, 237, 0.493);
-    border: 2px solid rgb(80, 0, 56);
-    border-radius: 15px;
-    padding: 3px;
+input#number:focus {
+    border: 2px solid;
+    width: 90%;
 }
-main li .button, .submit-button {
-    color: rgb(80, 0, 56);
-    font: bold 15px Arial, Helvetica, sans-serif;
-    width: 150px;
+form .celect {
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+form .check {
+    margin-top: 3%;
+    margin-bottom: 10%;
+}
+form .submit {
+    width: 100%;
     box-sizing: border-box;
-    background-color: rgba(255, 194, 237, 0.493);
+    color: rgb(255, 194, 237);
+    font: bold 15px Arial, Helvetica, sans-serif;
+    background-color: rgba(80, 0, 56, 0.817);
     border: 2px solid rgb(80, 0, 56);
     border-radius: 15px;
-    padding: 3px;
+    padding: 10px;
     cursor: grab;
 }
-main li .button:nth-child(1) {
-    margin-right: 30px;
-}
-main li .button:hover {
-    color: rgb(255, 194, 237);;
-    background-color:rgb(80, 0, 56);
-}
-main li .submit-button {
-    padding: 10px;
-    width: 330px;
-    color: rgb(255, 194, 237);
-    background-color: rgba(80, 0, 56, 0.817);
-}
-main li .submit-button:hover {
+form .submit:hover {
     border: 2px solid rgb(255, 194, 237);
 }
 
-footer {
-    font: bold 15px Arial, Helvetica, sans-serif;
-    padding: 10px;
-    text-align: center;
-    display: block;
-    position: relative;
-    width: 100%;
-    margin-bottom: 2%;
-    background-color: rgba(45, 144, 237, 0.6);
-}
-footer li {
-    list-style-type: none;
-    color: rgb(80, 0, 56);
-    font-style: bold;
-}
 
 @keyframes form {
-    0% {margin-left: 5%;}
-    25% {margin-left: 35%;}
-    50% {margin-left: 65%;}
-    75% {margin-left: 35%;}
-    100% {margin-left: 5%;}
+    0% {background-color: rgba(45, 144, 237, 0.6);}
+    50% {background-color: rgba(237, 45, 115, 0.6);}
+    100% {background-color: rgba(45, 144, 237, 0.6);}
+}
+
+@media (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+    main iframe {
+        margin: 0;
+        margin-bottom: 10%;
+    }
 }

@@ -7,61 +7,63 @@
 body {
     display: flex;
     flex-direction: column;
+    text-align: center;
     background-image: url(./images/dubai.jpg);
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
-    height: fit-content;
-    width: fit-content;
+    width: 100%;
 }
 
 header {
-    text-align: center;
-    padding: 10px;
-    padding-top: 35px;
-    padding-right: 20px;
+    margin: 2%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 40px;
-    margin-bottom: 60px;
-}
-header a img {
-    position: absolute;
-    top: 10px;
-    left: 15px;
-    width: 50px;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px 0 rgba(22, 22, 22, 0);
+    margin-bottom: 3%;
 }
 header a {
-    display: block;
-    margin-left: 70px;
     text-decoration: none;
     color: white;
-    font: italic medium 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 120px;
-    border-style:solid;
-    border-width: 1.5px;
-    padding: 3px;
-    border-color: white;
+    width: 10vw;
+    font-size: 1.5vw;
+    border: 1.5px solid white;
 }
 header a:nth-child(1) {
-    width: fit-content;
     border: none;
-    font-weight: bold;
+}
+header a img {
+    width: 100%;
+    border-radius: 5%;
 }
 header a:nth-child(2) {
     color: aqua;
     border-color: aqua;
 }
 
+footer {
+    padding: 10px;
+    margin-bottom: 1%;
+    text-align:center;
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: rgba(8, 16, 26, 0.911);
+    text-shadow:  8px 8px 8px rgb(0, 0, 0);
+}
+footer li {
+    color: white;
+    font-weight: bold;
+}
+
+
 main {
-    width: fit-content;
     margin: auto;
     padding: 10px;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 37px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 200%;
     color: rgb(198, 229, 255);
 }
 main h2 {
@@ -69,49 +71,49 @@ main h2 {
     text-align: center;
     text-shadow: 8px 8px 8px rgb(0, 0, 0);
 }
-main h2 span {
+main h2 span:first-child {
     color: rgb(248, 33, 101);
     text-decoration: overline;
 }
-main h2 span-2 {
+main h2 span:last-child {
     color: rgb(248, 33, 101);
     text-decoration: overline;
 }
-h2 span-2:after {
+h2 span:after {
     content: ' \21D3';
 }
 
-main article {
-    justify-content: center;
+main div {
+    justify-content: space-between;
     display: flex;
     flex-direction: row;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 main a {
-    margin: 40px;
-    display: block;
-    font-size: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    font-size: 60%;
     text-align: center;
     text-decoration: none;
-    width:auto;
     color: rgb(198, 229, 255);
     text-shadow: 10px 10px 10px rgb(0, 0, 0);
     background-color: rgba(8, 16, 26, 0.911);
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.842);
-    padding: 10px;
 }
 main a:hover {
     color: rgb(248, 33, 101);
-    font-style: bold;
+    font-weight: bold;
     transition: all 1s linear;
 }
-main img {
+main a img {
     border-style: solid;
     border-width: 1.5px;
     padding: 3px;
     color: rgb(198, 229, 255);
-    width: 200px;
+    width: 100%;
     height: 130px;
 }
 
@@ -132,18 +134,18 @@ my-element {
     font-size: 20px;
 }
 
-footer {
-    padding: 10px;
-    text-align: center;
-    display: block;
-    position: relative;
-    width: 100%;
-    margin-bottom: 10px;
-    background-color: rgba(8, 16, 26, 0.911);
-    text-shadow:  8px 8px 8px rgb(0, 0, 0);
-}
-footer li {
-    list-style-type: none;
-    color: white;
-    font-style: bold;
+@media (max-width: 800px) {
+    main div {
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main a {
+        margin: 1%;
+        width: 50vw;
+    }
+    main a img {
+        height: fit-content;
+    }
 }

@@ -10,7 +10,7 @@
 <body>
 
     <header>
-        <a href="./index.html"><img src="./images/logo.jpg" alt="Sorry, didn't download"> ELAINE TRAVEL </a>
+        <a href="./index.html"><img src="./images/elaine.png" alt="Sorry, didn't download"></a>
         <a href="./Dubai.html">DUBAI</a>
         <a href="./Bali.html">BALI</a>
         <a href="./Ibiza.html">IBIZA</a>
@@ -20,33 +20,46 @@
 
     <main>
         
-        <ul> Fill out this form and we will contact you ASAP!
-            <li> Name: <br><input type="text"> </li>
-            <li> Surname: <br><input type="text"> </li>
-            <li> Gmail address: <br><input type="text"> </li>
-            <li> Citizenship: <br><input type="text"> </li>
-            <li> Country of living: <br>
-                <div class="select-country">
-                    <select>
-                        <option value="0"></option>
-                        <option value="1">Uzbekistan</option>
-                        <option value="2">Russia</option>
-                        <option value="3">Kazakhstan</option>
-                    </select>
-                </div> </li>
-            <li> Would you like to subscribe on our updates?</li>
-            <li><button class="button">No, thank you</button><button class="button">Yes, of course!</button></li>
-            <li><button class="submit-button">Submit</button></li>
-        </ul>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.7868962383495!2d69.25807231472284!3d41.291742209883225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8ae93913db49%3A0x6908e2e983672e39!2zRWxhaW5lIFRyYXZlbCDQotGD0YDQuNGB0YLQuNGH0LXRgdC60LDRjyDQutC-0LzQv9Cw0L3QuNGP!5e0!3m2!1sen!2s!4v1669206487222!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         
+        <div id="picture"></div>
+        
+        <form name="myform" action="#">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name"><br>
+            <label for="lastname">Last name:</label><br>
+            <input type="text" id="lastname"><br>
+            <label for="email">Email address:</label><br>
+            <input type="text" id="email"><br>
+            <label for="number">Phone number:</label><br>
+            <span>+</span>
+            <input type="text" id="number"><br>
+            <label for="country">Country of living:</label><br>
+            <select class="select" id="country">
+                <option value="0">-</option>
+                <option value="1">Uzbekistan</option>
+                <option value="2">Russia</option>
+                <option value="3">Kazakhstan</option>
+                <option value="4">China</option>
+                <option value="5">South Korea</option>
+            </select><br>
+            <label>Do you agree with our terms of policy?</label><br>
+            <input class="check" type="checkbox" id="yes">
+            <label for="yes">Yes, of course!</label><br>
+
+            <button class="submit" id="submit">Submit!</button>
+        </form>
+
     </main>
 
     <footer>
-        <ul page>
+        <ul>
             <li>This website was created to fulfill Web Technology module's requirements and does not represent an actual company or service</li>
             <li>Copyright © 2022 17286 4BIS6<address>1, Fergana Iuli, Tashkent, Uzbekistan</address></li>
         </ul>
     </footer>
+
+    <script src="./contact_code.js"></script>
 
 </body>
 </html>

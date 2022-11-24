@@ -7,54 +7,55 @@
 body {
     display: flex;
     flex-direction: column;
-    text-align:center;
-    background-image: url(./images/santorini.jpg);
-    background-size: cover;
+    text-align: center;
+    background-image: url(./images/santorini/santorini3.gif);
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
-    height: fit-content;
-    width: fit-content;
+    width: 100%;
 }
 
 header {
-    padding: 10px;
-    padding-top: 35px;
-    padding-right: 20px;
+    margin: 2%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 40px;
-    margin-bottom: 60px;
-}
-header a img {
-    position: absolute;
-    top: 10px;
-    left: 15px;
-    width: 50px;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px 0 rgba(22, 22, 22, 0);
+    margin-bottom: 3%;
 }
 header a {
-    display: block;
-    margin-left: 70px;
     text-decoration: none;
     color: white;
-    font: italic medium 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 120px;
-    border-style:solid;
-    border-width: 1.5px;
-    padding: 3px;
-    border-color: white;
+    width: 10vw;
+    font-size: 1.5vw;
+    border: 1.5px solid white;
 }
 header a:nth-child(1) {
-    width: fit-content;
     border: none;
-    font-weight: bold;
+}
+header a img {
+    width: 100%;
+    border-radius: 5%;
 }
 header a:nth-child(5) {
     color: aqua;
     border-color: aqua;
 }
+
+footer {
+    padding: 10px;
+    margin-bottom: 1%;
+    text-align:center;
+    width: 100%;
+    background-color: rgba(108, 204, 164, 0.566);
+    text-shadow:  8px 8px 8px rgb(0, 0, 0);
+}
+footer li {
+    color: white;
+    text-shadow:  8px 8px 8px rgb(0, 0, 0);
+    font-weight: bold;
+}
+
 
 h1 {
     font: bold 45px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
@@ -63,38 +64,29 @@ h1 {
 }
 h2 {
     font: bold 30px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
-    color: rgb(255, 185, 230);
+    color: rgb(255, 191, 233);
     text-shadow: 5px 5px 5px rgb(85, 0, 38);
     margin: 20px;
 }
+div img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 1%;
+    padding: 1%;
+    border: 3px solid rgb(186, 255, 227);
+}
+div img:hover {
+    animation: image 3s 1;
+}
+iframe {
+    margin: 1%;
+    border: none;
+    border-radius: 30px;
+}
 
-article {
-    display: inline-flex;
-    justify-content: space-between;
-    margin: 50px;
-    width: 90%;
-}
-.gif {
-    display: block;
-    height: 500px;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-footer {
-    font: bold 15px Arial, Helvetica, sans-serif;
-    padding: 10px;
-    text-align: center;
-    display: block;
-    position: relative;
-    width: 100%;
-    margin-top: 40px;
-    margin-bottom: 15px;
-    background-color: rgba(108, 204, 164, 0.566);
-}
-footer li {
-    list-style-type: none;
-    color: rgb(85, 0, 38);
-    font-style: bold;
+@keyframes image {
+    0% {transform: rotate3d(1, 1, 1, 0deg); transform: scale(1.2);}
+    50% {transform: rotate3d(1, 1, 1, 360deg);}
+    100% {transform: rotate3d(1, 1, 1, 0deg);}
 }
